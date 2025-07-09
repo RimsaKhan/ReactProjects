@@ -8,13 +8,19 @@ import './App.css'
 // // import Ticket from"./Ticket"
 // import CommentsForm from"./CommentsForm"
 // import Comment from"./Comment"
-import Counter from"./Counter"
-import Joker from "./Joker"
+// import Counter from"./Counter"
+// import Joker from "./Joker"
+
+import Button from '@mui/material/Button';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function App() {
   // let winCondition=(ticket)=>{
   // return ticket[0]===0;
   // };
+  let handleClick=()=>{
+    console.log("button was clicked");
+  }
   return (
     <>
     {/* <Lottery n={3} winCondition={winCondition}/> */}
@@ -27,7 +33,15 @@ function App() {
     {/* <Comment/>
     <CommentsForm/> */}
     {/* <Counter/>  */}
-    <Joker/>
+    {/* <Joker/> */}
+   <Button onClick={handleClick} variant="contained">Contained</Button>
+   <br></br><br></br>
+   <Button onClick={handleClick} variant="contained"disabled>Click me</Button>
+   <br></br><br></br>
+   <Button onClick={handleClick} variant="contained"color="success">Success</Button>
+   <Button variant="outlined" startIcon={<DeleteIcon />}>
+    Delete
+   </Button>
     </>
   )
 }
