@@ -10,17 +10,16 @@ import './App.css'
 // import Comment from"./Comment"
 // import Counter from"./Counter"
 // import Joker from "./Joker"
-
-import Button from '@mui/material/Button';
-import DeleteIcon from '@mui/icons-material/Delete';
-
+//  import SearchBox from "./SearchBox"
+//  import InfoBox from "./InfoBox"
+ import WeatherApp from "./WeatherApp"
 function App() {
   // let winCondition=(ticket)=>{
   // return ticket[0]===0;
   // };
-  let handleClick=()=>{
-    console.log("button was clicked");
-  }
+  // let handleClick=()=>{
+  //   console.log("button was clicked");
+  // }
   return (
     <>
     {/* <Lottery n={3} winCondition={winCondition}/> */}
@@ -34,14 +33,17 @@ function App() {
     <CommentsForm/> */}
     {/* <Counter/>  */}
     {/* <Joker/> */}
-   <Button onClick={handleClick} variant="contained">Contained</Button>
+   {/* <Button onClick={handleClick} variant="contained">Contained</Button>
    <br></br><br></br>
    <Button onClick={handleClick} variant="contained"disabled>Click me</Button>
    <br></br><br></br>
    <Button onClick={handleClick} variant="contained"color="success">Success</Button>
    <Button variant="outlined" startIcon={<DeleteIcon />}>
     Delete
-   </Button>
+   </Button> */}
+   {/* <SearchBox/>
+   <InfoBox/> */}
+  < WeatherApp/>
     </>
   )
 }
